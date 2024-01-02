@@ -6,49 +6,12 @@
     <title>HTML PROJECT</title>
 </head>
 <body>
-    <frameset rows="*, 30%" cols="30%, *, 30%">
-        <frame src="firstFrame.html" frameborder="0" scrolling="auto">
-        <frame src="secondFrame.html" frameborder="0" scrolling="auto">
-        <frame src="thirdFrame.html" frameborder="0" scrolling="auto">
-    </frameset>
-
     <center>
         <img src="/gif/giphy.gif" height="100">
-        <br>
         <hr>
-        <h1><b> Welcome Dear Visitor, Please Login : </b></h1>
     </center>
-    
-    <div style="display: table; height: 100vh; width: 100%; text-align: center;">
-    <div style="display: table-cell;  padding-top: 0px;">
-    <form action="https://www.ensia.edu.dz/" method="GET">
-    <center>
-        <table border="3">
-            <tr>
-                <div>
-                    <th> <label for="Uname">Username : </label> </th>
-                    <th> <input type="text" id="Uname" name="Uname" placeholder="Enter your username" required> </th>
-                </div>
-            </tr>
-            <tr>
-                <div>
-                    <td> <label for="pass">password : </label> </td>
-                    <td> <input type="password" id="pass" name="pass" placeholder="Enter your password" maxlength="12" required> </td>
-                </div>
-            </tr>
-            <tr align="center">
-                <div>
-                    <td><input type="reset"></td>
-                </div>
-                <div>
-                    <td><input type="submit"></td>
-                </div>
-            </tr>
-            
-        </table>
-    </center>
-    </form>
-    </div></div>
-
+    <iframe src="firstFrame.html" style="width: 15%; height: 100vh; float: up; border: 2px solid gray;"></iframe>
+    <iframe src="secondFrame.html" style="width: 68%;margin-left: 4px; height: 100vh; float: center; border: 2px solid gray;"></iframe>
+    <iframe src="thirdFrame.html" style="width: 15%; height: 100vh; float: right; border: 2px solid gray;"></iframe>
 </body>
 </html>
