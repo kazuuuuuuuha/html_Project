@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(234, 234, 234);
+}
+
+#footer{
+    background-color: rgb(56, 56, 56);
+}
+
+/* Styling the footer content */
+.footer-content {
+    background-color: rgb(24, 24, 24);
+}
