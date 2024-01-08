@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM Serif Display&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+    
+        .foreground-image {
+            width: 483px;
+            height: 480px;
+            margin-top: 50px;
+            margin-left: 874px;
+            position: absolute;
+            z-index: 5;
+        }
+        .text{
+            font-weight: 400;
+            color: #05502D;
+            font-size: 54px;
+            line-height: normal;
+            margin-top: 100px;
+            margin-left: 96px;
+            font-style: normal;
+            font-family: 'DM Serif Display', serif;
+            
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            width: 1267px;
+            justify-content: center;
+            align-items: center;
+            gap: 235px;
+        }
+        .img3{
+            width: 240px;
+            height: 122px;
+            flex-shrink: 0;
+        }
+        .container2 {
+            display: flex;
+            padding: 10px 14px;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+        }
+        .line{
+            width: 58px;
+            height: 0px;
+            flex-shrink: 0;
+            stroke-width: 5px;
+            stroke: #61B15A;
+            margin-top: 134px;
+            margin-left: 489px;
+        }
+        .container3{
+            display: flex;
+            padding: 0px 22px;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position:absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .circle {
+            width: 404px;
+            height: 404px;
+            margin-top: 75px;
+            margin-left: 936px;
+            background: #D9D9D9;
+            box-shadow: 0px 0px 47.79999923706055px rgba(0, 0, 0, 0.30);
+            border-radius: 9999px;
+            position: absolute;
+            object-fit: cover;
+            z-index: 4; /* Lower z-index to be below the image */
+        }
+        .paragraph{
+            font-size: 24px;
+            color: black;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            word-wrap: break-word;
+            line-height: normal;
+            margin-top: 0px;
+            margin-left: 96px;
+            font-style: normal;
+            width: 612px;
+            height: 98px;
+            flex-shrink: 0;
+        }
+        .nav-bar{
+            color: #05502D; 
+            font-size: 24px; 
+            font-family: Noto Sans; 
+            font-weight: 700; 
+            word-wrap: break-word;
+            text-decoration: none; 
+        }
+        .Order{
+            display: inline-flex;
+            padding: 15px 31px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            border-radius: 15px;
+            background: #61B15A;
+            box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.25);
+            margin-left: 96px;
+            margin-top: 15px;
+            color: #FFF;
+            text-align: center;
+            font-family: 'Noto Sans',sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;;
+            border: none;
+        }
+        .watch{
+            width: 250px;
+            height: 100px;
+            flex-shrink: 0;
+            margin-top: 15px;
+            margin-left: 15px;
+            text-decoration: none; 
+
+        }
+        .cont{
+            display: flex;
+            flex-direction: row; /* Display in a row to have them next to each other */
+            align-items: center;
+            text-decoration: none; 
+
+        }
+        .text3{
+            color: #000;
+            text-align: center;
+            font-family: Noto Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: bolder;
+            line-height: normal;
+            top: 50%; /* Place the text at the vertical center */
+            left: 50%; /* Place the text at the horizontal center */
+            transform: translate(-147%, 50%); /* Center the text exactly */
+        }
+        .play{
+            margin-top: 15px;
+            margin-left: -163px;
+        }
+        .line {
+            width: 60px;
+            height: 5px; /* Adjust as needed */
+            border: 3px #61B15A solid;
+            box-sizing: border-box;
+            margin-top: -46px; /* Adjust as needed */
+            margin-left: -420px;
+        }
+        .green{
+            z-index: 3;
+            margin-left: 710px;
+            margin-top: 200px;
+            position: absolute;
+            object-fit: cover;
+        }
+        .gold{
+            z-index: 2;
+            margin-left: 696px;
+            margin-top: 192px;
+            position:fixed;
+            object-fit: cover;
+        }
+        .footer{
+            margin-top: 120px;
+            flex-shrink: 0;
+            clear: both;
+            z-index: 5;
+            align-items: center;
+            position: fixed;
+            margin-left: 150px;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #F9F5E7;">
+
+    <center>
+        <nav>
+            <div class="container">
+                <img src="Premium_Vector___Olive_oil_typography_logo_design-removebg-preview 1.png" class="img3">
+                <div class="container2">
+                    <a href="#" class="nav-bar">home</a>
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-bar" style="color: #05502D; font-size: 24px; font-family: Noto Sans; font-weight: 700; word-wrap: break-word">menu</a>
+                        <div class="dropdown-content">
+                            <a href="#">Slads</a>
+                            <a href="#">Sandwiches</a>
+                            <a href="#">Soups</a>
+                            <a href="#">Vegan</a>
+                            <a href="#">Soups</a>
+                            <a href="#">Drinks</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-bar">  us</a>
+
+                    <a href="#" class="nav-bar">contacts </a>
+                </div>
+                <div class="container3">
+                    <a href="#"><img src="bell.png"></a>
+                    <a href="#"><img src="globe.png"></a>
+                    <a href="#"><img src="user-circle.png"></a>
+                </div>
+            </div>
+            <div class="line"></div>
+        </nav>
+    </center>
+
+    <img src="Delicious_Food_PNG_Images___Food_Clipart__Food__Salad_PNG_Transparent_Background_-_Pngtree-removebg-preview 1.png" class="foreground-image">
+    <div class="circle"></div>
+    <img src="Rectangle 4.png" class="green">
+    <img src="Rectangle 5.png" class="gold">
+
+    <img src="Tomato_slice_isolated_on_white-removebg-preview 1.png" style="z-index: 6;position: absolute; margin-top: 370px; margin-left: 1260px;">
+    <img src="The_Benefits_of_Beets_-_Health_Beat-removebg-preview 1.png" style="z-index: 6;position: absolute; margin-top: 180px; margin-left: 850px">
+    <img src="Luxury_fashion___independent_designers___SSENSE__1_-removebg-preview 1.png" style="z-index: 4;position: absolute; margin-top: 185px; margin-left: 1260px">
+    <img src="download__27_-removebg-preview 1.png" style="z-index: 6;position: absolute; margin-top: -26px; margin-left: 1040px">
+    <img src="Download_premium_png_of_Kiwi_slices_png_sticker__fruit_image_on_transparent_background_by_jingpixar_about_fruit__kiwi__fruit_png__healthy_food__and_kiwi_slice_6731010-removebg-preview 1.png" style="z-index: 6;position: absolute; margin-top: 320px; margin-left: 865px">
+    <img src="e7c1fc29-5a31-4d0c-9101-aebb358f8475-removebg-preview 1.png" style="z-index: 4;position: absolute; margin-top: 16px; margin-left: 850px">
+    <img src="Spinach_stock_photo__Image_of_closeup__salad__organic_-_7419534-removebg-preview 1.png" style="z-index: 6;position: absolute; margin-top: 15px; margin-left: 1180px" >
+    <img src="Leaf_Green_Plant_Stem_Herb_PNG_-_Free_Download-removebg-preview 1.png" style="z-index: 4;position: absolute; margin-top: 380px; margin-left: 1030px">
+
+    <p class="text">Fresh & Organic</p>
+    <p class="paragraph">variety of healthy plates that you can’t find anywhere made with fresh and organic ingredients to ensure that our food benefit you the most</p>
+
+    <div class="cont">
+        <a href="#" ><button class="Order">Order Now</button></a>
+        <a href="#" ><img class="watch" src="Subtract.png" /></a>
+        <p class="text3">Watch Video</p>
+        <a href="#" ><img src="play.png" class="play"></a>
+    </div>
+
+    <footer class="footer">
+    <div class="container p-4 pb-0 ">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Social media links -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #AD946B"
+            href="https://www.facebook.com/"
+            role="button"
+            ><i class="bi bi-meta"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #AD946B"
+            href="https://www.twitter.com/"
+            role="button"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a
+            class="btn text-white"
+            style="background-color: #AD946B"
+            href="https://www.instagram.com/"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white"
+            style="background-color: #AD946B"
+            href="https://www.linkedin.com/"
+            role="button"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </section>
+        <!-- End of Section: Social media -->
+      </div>
+    </footer>
+</body>
+</html>
